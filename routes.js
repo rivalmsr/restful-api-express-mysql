@@ -7,5 +7,8 @@ module.exports = function(app){
     .get(todoList.index);
 
   app.route('/users')
-    .get(todoList.users);
+    .get(todoList.usersGet);
+
+  app.route('/users')
+    .post(todoList.usersInput);
 };
